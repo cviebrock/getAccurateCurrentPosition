@@ -20,8 +20,10 @@ The following params also exist for getCurrentPosition() but are set for you in 
    <li><strong>maximumAge</strong>: This is forced to zero since we only want current location information</li>
 </ul>
 
+A function 'geoProgress' is required and can inform the user that an accurate location is being acquired. This function can be merely for development purposed or displaying to the user what is currenlty happeneing.
+
 <h3>Sample usage:</h3>
-<code>navigator.geolocation.getAccurateCurrentPosition(onSuccess, onError, {desiredAccuracy:20, maxWait:15000});</code>
+<code>navigator.geolocation.getAccurateCurrentPosition(onSuccess, onError, geoProgress, {desiredAccuracy:20, maxWait:15000});</code>
 
 Translating the above options into english -- This will attempt to find the device location with an accuracy of at least 20 meters and attempt to achieve this accuracy for 15 seconds
 
