@@ -53,6 +53,9 @@ The option parameters are identical to `getCurrentPosition()` with the following
   It can be used to merely provide the user with feedback or to trigger other
   functions of your web/app.
 
+* __debug__: Boolean.  If set to `true` then various information will be logged to the
+  console.  Set `false` by default.
+
 The following params also exist for `getCurrentPosition()` but are set for you in
 `getAccurateCurrentPosition()`:
 
